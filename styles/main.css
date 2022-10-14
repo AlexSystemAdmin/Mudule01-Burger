@@ -8,6 +8,9 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+header{
+    border-bottom: 1px solid #DEDEDE;
+}
 .header{
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -37,6 +40,9 @@ body{
     color: #443737;
     text-decoration: none;
 }
+.heafer-nav a:hover{
+    color: #FFC725;
+}
 .heafer-nav a::after{
     content: '';
     width: 100%;
@@ -55,6 +61,7 @@ body{
     border: none;
     padding: 0px;
     gap: 10px;
+    cursor: pointer;
 }
 .button-count{
     font-weight: 700;
@@ -86,6 +93,7 @@ body{
     background-size: cover;
     padding: 142px;
     background-position: center center;
+    margin-bottom: 140px;
 }
 .breadcrumbs{
     padding-left: 0;
@@ -93,7 +101,7 @@ body{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 7px;
 }
 .breadcrumbs a{
     color: #DEDEDE;
@@ -101,10 +109,17 @@ body{
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
+.breadcrumbs a:hover{
+    color: #FFC725;
+}
 .breadcrumbs a::before{
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before{
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before{
     display: none;
@@ -114,15 +129,88 @@ body{
     font-weight: 700;
     font-size: 79px;
     font-family: 'Nunito Sans', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 20px;
 }
 .description{
     font-family: 'Open Sans', sans-serif;
     color: #FAF9F9;
     font-weight: 400;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.6;
     max-width: 320px;
     margin: 0 auto;
+}
+.banner-box{
+    background-image: url(../images/skidka.jpg);
+    width: 1180px;
+    height: 438px;
+}
+
+.banner-box{
+    position: relative;
+}
+.banner-title span:first-child{
+    background-color: #F37335;
+    color: #FFFFFF;
+    padding-left: 17.27px;
+    padding-top: 5px;
+    padding-right: 19.73px;
+    padding-bottom: 5px;
+    border-radius: 14px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    margin-bottom: 3px;
+    line-height: 18px;
+}
+.banner-title span:last-child{
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Nunito Sans;
+    position: absolute;
+    top: 131px;
+    left: 100px;
+    line-height: 76px;
+    margin-bottom: 10px;
+}
+.banner-text{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #FAF9F9;
+    max-width: 353px;
+    height: 48px;
+    position: absolute;
+    top: 217px;
+    left: 100px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.banner-link{
+    background-color: #FBB731;
+    width: 170px;
+    height: 18px;
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E2F40;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
 }
