@@ -143,7 +143,6 @@ header{
 }
 .banner-box{
     background-image: url(../images/skidka.jpg);
-    max-width: 1180px;
     background-size: cover;
     /*padding-top: 100px;
     padding-right: 727px;
@@ -151,7 +150,6 @@ header{
     padding-left: 100px;*/
     padding-left: 100px;
     padding-top: 100px;
-    padding-right: 727px;
     padding-bottom: 119px;
     background-position: center center;
 }
