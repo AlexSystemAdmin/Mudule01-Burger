@@ -143,13 +143,83 @@ header{
 }
 .banner-box{
     background-image: url(../images/skidka.jpg);
-    width: 1180px;
-    height: 438px;
+    max-width: 1180px;
+    background-size: cover;
+    /*padding-top: 100px;
+    padding-right: 727px;
+    padding-bottom: 100px;
+    padding-left: 100px;*/
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 727px;
+    padding-bottom: 119px;
+    background-position: center center;
+}
+.banner-title{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 76px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.banner-title span{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #F37335;
+    border-radius: 14px;
+    padding: 5px 0;
+    display: block;
+    max-width: 95px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.banner-text{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #FAF9F9;
+    margin-top: 0;
+    margin-bottom: 35px;
+    max-width: 353px;
+}
+.banner-link{
+    text-decoration: none;
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E2F40;
+    padding: 20px 25px;
+    background-color: #FBB731;
+    border-radius: 5px;
 }
 
-.banner-box{
+
+
+
+
+
+
+
+/*.banner-box{
+    background-image: url(../images/skidka.jpg);
+    max-width: 1180px;
+    height: 438px;
+    padding: 100px 727px 100px 100px;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
 .banner-title span:first-child{
     background-color: #F37335;
     color: #FFFFFF;
@@ -213,4 +283,4 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
-}
+}*/
