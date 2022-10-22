@@ -45,6 +45,7 @@ header{
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+    transition: 0.3s;
 }
 .heafer-nav a:hover{
     color: #FFC725;
@@ -114,6 +115,7 @@ header{
     font-size: 15px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    transition: 0.2s;
 }
 .breadcrumbs a:hover{
     color: #FFC725;
@@ -158,7 +160,10 @@ header{
     padding-top: 100px;
     padding-bottom: 119px;
     background-position: center center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+}
+.menu{
+    padding-top: 20px;
 }
 .banner-title{
     font-size: 60px;
@@ -206,6 +211,7 @@ header{
     background-color: #FBB731;
     border-radius: 5px;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover{
     background-color: transparent;
@@ -298,6 +304,7 @@ header{
     margin: 0 auto;
     gap: 9px;
     border: none;
+    transition: 0.3s;
     /*margin-bottom: 29px;*/
 }
 .menu-grid-btn:hover{
@@ -388,11 +395,37 @@ header{
 }
 .footer-item .footer-list li a:hover{
     color: #FBB731;
+    transition: 0.2s;
 }
 .footer-list-tel li a:hover{
     color: #DEDEDE;
+    transition: 0.2s;
 }
-
+.button-up{
+    background-color: #FBB731;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1E2F40;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1s;
+}
+.button-up.hidden{
+    opacity: 0;
+}
+.button-up.visible{
+    opacity: 1;
+    border-radius: 5px;
+}
+.button-up:hover{
+    background-color: #F37335;
+}
 /*Style INDEX*/
 
 .main {
