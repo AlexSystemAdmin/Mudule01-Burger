@@ -34,23 +34,23 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.heafer-nav{
+.header-nav{
     display: flex;
     list-style-type: none;
     padding-left: 0;
     gap: 46px;
 }
-.heafer-nav a{
+.header-nav a{
     font-weight: 600;
     font-size: 20px;
     color: #443737;
     text-decoration: none;
     transition: 0.3s;
 }
-.heafer-nav a:hover{
+.header-nav a:hover{
     color: #FFC725;
 }
-.heafer-nav a::after{
+.header-nav a::after{
     content: '';
     width: 100%;
     height: 3px;
@@ -58,7 +58,7 @@ header{
     background: transparent;
     display: block;
 }
-.heafer-nav a.active::after{
+.header-nav a.active::after{
     background: #FFC725;
 }
 .button{
@@ -152,14 +152,10 @@ header{
 .banner-box{
     background-image: url(../images/skidka.jpg);
     background-size: cover;
-    /*padding-top: 100px;
-    padding-right: 727px;
-    padding-bottom: 100px;
-    padding-left: 100px;*/
     padding-left: 100px;
     padding-top: 100px;
     padding-bottom: 119px;
-    background-position: center center;
+    background-position: 0 center;
     margin-bottom: 80px;
 }
 .menu{
@@ -341,14 +337,12 @@ header{
 .footer-box{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-logo {
     width: 63px;
     height: 56px;
-}
-.footer-item {
-    flex: 0 0 auto;
 }
 .footer-item h2 {
     font-size: 20px;
@@ -356,6 +350,7 @@ header{
     text-transform: uppercase;
     margin-bottom: 19px;
     margin-top: 0;
+    line-height: 1.5;
 }
 
 .footer-list li {
@@ -426,6 +421,7 @@ header{
 .button-up:hover{
     background-color: #F37335;
 }
+
 /*Style INDEX*/
 
 .main {
@@ -436,6 +432,8 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 .content {
     color: #FAF9F9;
@@ -450,7 +448,8 @@ header{
     line-height: 120px;
     margin-bottom: 40px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 34px;
+    line-height: 138px;
 }
 .content-title span {
     color: #FBB731;
@@ -458,13 +457,15 @@ header{
     font-weight: 700;
     line-height: 38px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+
 }
 .content-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
     line-height: 1.4;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
+    max-width: 526px;
 }
 .content-link,
 .promo a {
@@ -551,4 +552,490 @@ header{
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+.footer-item .footer-item-tel{
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-item-tel li{
+    margin-bottom: 12px;
+}
+.footer-item-tel a{
+    font-size: 19px;
+    color: #FBB731;
+    margin-top: 0;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* Responsive */
+
+@media(max-width: 1220px){
+    .content-title{
+        font-size: 90px;
+    }
+    .content-text{
+        max-width: 470px;
+    }
+}
+@media(max-width: 1000px){
+    .footer-tel .footer-list-tel{
+        display: none;
+    }
+    .footer-item .footer-item-tel{
+        display: block;
+    }
+}
+@media(max-width:850px){
+    .content{
+        padding-top: 42px;
+        padding-bottom: 123.7px;
+        flex: 0 0 421px;
+    }
+    .content-title{
+        font-size: 86px;
+        line-height: 101px;
+        margin-bottom: 28.07px;
+    }
+    .content-title span{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 7.19px;
+    }
+    .content-text{
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 30.3px;
+        max-width: 51vw;
+    }
+    .content-link{
+        padding: 17px 38px;
+    }
+    .visual-bg{
+        width: 198px;
+    }
+    .main img{
+        bottom: -91px;
+        width: 518px;
+        position: absolute;
+        right: -162px;
+    }
+    .promo{
+        padding-top: 106px;
+    }
+    .promo-left {
+        padding: 44px 30px;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 12.5px;
+    }
+    .sale {
+        font-size: 14px;
+        padding: 5px 21px;
+        line-height: 18px;
+    }
+    .cost{
+        line-height: 76px;
+        margin-bottom: -7px;
+    }
+    .promo-description{
+        font-family: 'Lato','Open Sans', sans-serif;
+    }
+    .free {
+        line-height: 56px;
+        margin-bottom: -5px;
+    }
+    .promo-right {
+        padding: 60px 30px;
+    }
+    .promo-description {
+        margin-bottom: 15px;
+        font-family: 'Lato','Open Sans', sans-serif;
+    }
+    .promo-right .promo-description {
+        margin-bottom: 15px;
+    }
+    .promo a {
+        padding: 16px  40px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    .promo-left, .promo-right {
+        max-height: 298px;
+        width: 27vw;
+    }
+}
+@media(max-width: 615px){
+    .promo .wrapper{
+        flex-direction: column;
+        background-size:cover;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .promo-left, .promo-right {
+        width: 100%;
+    }
+}
+@media(max-width: 567px){
+    .footer-item .footer-item-tel{
+        display: none;
+    }
+    .footer-tel .footer-list-tel{
+        display: block;
+    }
+}
+@media(max-width: 550px){
+    .promo .wrapper{
+        gap: 22.5px;
+    }
+    .content {
+        flex: 0 0 376px;
+    }
+    .content-title span{
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 120%;
+    }
+    .content-title{
+        font-size: 58px;
+        line-height: 120%;
+        margin-bottom: 21px;
+    }
+    .main .wrapper{
+        padding-left: 15px;
+    }
+    .main img {
+        bottom: -90px;
+        width: 375px;
+        right: -13px;
+    }
+    .content-text{
+        font-size: 13px;
+        line-height: 140%;
+        margin-bottom: 32px;
+        max-width: 71vw;
+    }
+    .content-link{
+        font-size: 13px;
+        line-height: 16px;
+        padding: 17px 41px;
+        margin-bottom: 168px;
+    }
+    .visual-bg {
+        display: none;
+    }
+    .promo {
+        padding-top: 95px;
+        padding-bottom: 0;
+    }
+    .promo-left {
+        padding-top: 39px;
+        padding-left: 15px;
+        padding-bottom: 58px;
+    }
+    .promo-right {
+        padding-top: 35px;
+        padding-left: 12px;
+        padding-bottom: 44.65px;
+    }
+    .sale {
+        margin-bottom: 4.53px;
+    }
+    .cost {
+        font-size: 55px;
+        margin-bottom: 0;
+    }
+    .promo-left .promo-description{
+        margin-bottom: 0;
+        line-height: 150%;
+    }
+    .free{
+        font-size: 39px;
+        line-height: 56px;
+        margin-bottom: 8.5px;
+    }
+    .promo-right .promo-description {
+        margin-top: 0;
+        margin-bottom: 18.07px;
+    }
+    .promo a {
+        padding: 19px 32px;
+    }
+    .footer {
+        margin-top: 61px;
+    }
+
+
+/* Modal */
+
+.burger{
+    height: 22px;
+    width: 34px;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal{
+    background-color: #FFF8DC;
+    max-width: 500px;
+    text-align: center;
+    position: absolute;
+    top: -400px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.modal .header-nav{
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+.burger-close{
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/close.svg);
+    background-color: transparent;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Responsive */
+
+@media (min-width: 1001px){
+    .footer-list + .footer-list-tel{
+        display: none;
+    }
+}
+
+@media(min-width: 766px){
+    .header-burger{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        max-width: 738px;
+    }
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item{
+        flex-basis: 75.5%;
+    }
+    .bg{
+        margin-bottom: 72px;
+    }
+    .banner-box{
+        padding-top: 100px;
+        padding-left: 40px;
+        padding-bottom: 120px;
+        background-position: 0 center;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 15px;
+    }
+    .menu-other{
+        overflow: hidden;
+        height: 558px;
+    }
+    .menu-other .menu-grid{
+        display: flex;
+        width: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 50px;
+    }
+    .menu-other .menu-grid-item{
+        flex: 0 0 281px;
+    }
+    .footer-tel{
+        display: none;
+    }
+    .footer-list + .footer-list-tel{
+        display: block;
+    }
+    .menu-other .menu-grid-cover,
+    .menu-other .menu-grid-cover img {
+        height: 320px;
+    }
+}
+
+@media(max-width: 765px){
+    nav{
+        display: none;
+    }
+    .header{
+        gap: 20px;
+    }
+    .menu-other .container{
+        padding-right: 0;
+    }
+    .button-up.visible{
+        display: none;
+    }
+}
+
+@media(max-width: 567px){
+    .title {
+        font-size: 38px;
+        margin-top: 22px;
+        margin-bottom: 8px;
+        line-height: 52px;
+    }
+    .breadcrumbs a {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .description {
+        font-size: 12px;
+        width: 251px;
+    }
+    /*.bg{
+        padding: 55px;
+    }*/
+    .banner-box {
+        padding-top: 35px;
+        padding-left: 13px;
+        padding-bottom: 54px;
+        background-image: url(../images/skidka-mobile.jpg);
+        background-position: 17% center;
+        margin-bottom: 30px;
+    }
+    .menu-title {
+        font-size: 27px;
+    }
+    .menu-select {
+        font-size: 15px;
+        flex-basis: 121px;
+        padding: 8px 15px;
+        font-size: 12px;
+        flex-basis: 137px;
+        background-position: 92% center;
+    }
+    .bg {
+        padding: 55px 22px 58px 20px;
+        background-image: url(../images/bg-mobile.jpg);
+        margin-bottom: 33px;
+    }
+    .header{
+        padding-bottom: 18px;
+    }
+    .banner-text{
+        max-width: 250px;
+    }
+    .menu-header{
+        margin-bottom: 20px;
+    }
+    .menu-grid{
+        margin-bottom: 57px;
+    }
+    .menu-grid-cover {
+        height: 54vw;
+        margin-bottom: 7px;
+    }
+    .menu-grid-item {
+        margin-bottom: -25px;
+    }
+    .menu-grid-cover img {
+        height: 100%;
+    }
+    .menu-grid-title{
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+    .menu-grid-price{
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 7px;
+    }
+    .menu-grid-btn{
+        padding: 10px 21px;
+    }
+    .menu-grid {
+        gap: 50px 7px;
+    }
+    .menu-other{
+        height: 108vw;
+    }
+    .menu-other .menu-grid{
+        padding-bottom: 24vw;
+    }
+    .menu-other .menu-grid-cover{
+        height: 54vw;
+    }
+    .menu-other .menu-grid-cover img{
+        height: 100%;
+    }
+    .menu-other .menu-grid-item {
+        flex: 0 0 41vw;
+    }
+    .footer{
+        margin-top: 54px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .footer-list + .footer-list-tel {
+        display: none;
+    }
+    .footer-box {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "logo tel" "link link" "info info";
+        gap: 0;
+    }
+    .footer-item:nth-child(1){
+        grid-area: logo;
+    }
+    .footer-item:nth-child(2){
+        grid-area: link;
+    }
+    .footer-item:nth-child(3){
+        grid-area: info;
+    }
+    .footer-tel{
+        grid-area: tel;
+        display: block;
+        text-align: right;
+    }
+}
+
+@media(max-width: 360px){
+    .header-logo {
+        width: 116px;
+        height: 37px;
+        background-size: contain;
+    }
+}
+@media(max-width: 320px){
+    .banner-box {
+        background-position: 20% center;
+    }
 }
