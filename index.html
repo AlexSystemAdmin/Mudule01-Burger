@@ -37,7 +37,7 @@
             </div>
             <div class="visual">
                 <div class="visual-bg"></div>
-                <img src="images/burger.png" id="burger" alt="Burger">
+                <img src="images/burger.png" id="burger-image" alt="Burger">
             </div>
         </div>
     </div>
@@ -104,42 +104,41 @@
     </footer>
 
     <script>
-
         //Change image
 
         //It's event of reloading page
 
-        /*if (document.documentElement.clientWidth <= 1203 && document.documentElement.clientWidth > 617) {
-            var x = document.getElementById("burger");
+        if (document.documentElement.clientWidth <= 1203 && document.documentElement.clientWidth > 617) {
+            let x = document.getElementById("burger-image");
             x.src="/images/burger_planshet.png";
         } 
         else 
         if(document.documentElement.clientWidth <= 617){
-            var x = document.getElementById("burger");
+            let x = document.getElementById("burger-image");
             x.src = "/images/burger_mobile.png";
         }
         else {
-            var x = document.getElementById("burger");
+            let x = document.getElementById("burger-image");
             x.src="/images/burger.png";
-        }*/
+        }
 
         // It's event of changing windows width
 
         window.addEventListener(`resize`, event => {
             if (document.documentElement.clientWidth <= 1203 && document.documentElement.clientWidth > 617){
-            var x = document.getElementById("burger");
+                let x = document.getElementById("burger-image");
             x.src="/images/burger_planshet.png";
         }
         else 
             if (document.documentElement.clientWidth <= 617){
-                var x = document.getElementById("burger");
+                let x = document.getElementById("burger-image");
                 x.src="/images/burger_mobile.png";
             }
         else{
-            var x = document.getElementById("burger");
+            let x = document.getElementById("burger-image");
             x.src="/images/burger.png";
         }
-        }, false);
+        }, true);
     </script>
 </body>
 </html>
