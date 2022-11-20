@@ -13,6 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+    <link rel="icon" sizes="32x32" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="150x150" href="images/favicon/mstile-150x150.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="main">
@@ -27,7 +37,7 @@
             </div>
             <div class="visual">
                 <div class="visual-bg"></div>
-                <img src="images/burger.png" alt="Burger">
+                <img src="images/burger.png" id="burger" alt="Burger">
             </div>
         </div>
     </div>
@@ -41,7 +51,7 @@
             <div class="promo-right">
                 <p class="free">Бесплатно</p>
                 <p class="promo-description">При заказе на сумму 500 рублей и более - доставляем бесплатно</p>
-                <a href="menu.html">заказать</a>
+                <a href="menu.html" class="content-link">заказать</a>
             </div>
         </div>
     </div>
@@ -61,7 +71,7 @@
                     </ul>
                     <ul class="footer-item footer-item-tel">
                         <li><a href="tel:+79007871313">+ 7 900 787 13-13</a></li>
-                        <li><a href="tel:+7 900 700 14-14">7 900 700 14-14</a></li>
+                        <li><a href="tel:+79007001414">+ 7 900 700 14-14</a></li>
                     </ul>
                 </div>
                 <div class="footer-item">
@@ -92,5 +102,44 @@
             
         </div>
     </footer>
+
+    <script>
+
+        //Change image
+
+        //It's event of reloading page
+
+        if (document.documentElement.clientWidth <= 1203 && document.documentElement.clientWidth > 617) {
+            let x = document.getElementById("burger");
+            x.src="/images/burger_planshet.png";
+        } 
+        else 
+        if(document.documentElement.clientWidth <= 617){
+            let x = document.getElementById("burger");
+            x.src = "/images/burger_mobile.png";
+        }
+        else {
+            let x = document.getElementById("burger");
+            x.src="/images/burger.png";
+        }
+
+        // It's event of changing windows width
+
+        window.addEventListener(`resize`, event => {
+            if (document.documentElement.clientWidth <= 1203 && document.documentElement.clientWidth > 617){
+            let x = document.getElementById("burger");
+            x.src="/images/burger_planshet.png";
+        }
+        else 
+            if (document.documentElement.clientWidth <= 617){
+                let x = document.getElementById("burger");
+                x.src="/images/burger_mobile.png";
+            }
+        else{
+            let x = document.getElementById("burger");
+            x.src="/images/burger.png";
+        }
+        }, false);
+    </script>
 </body>
 </html>
