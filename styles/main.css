@@ -7,6 +7,7 @@ body{
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 header{
     border-bottom: 1px solid #DEDEDE;
@@ -101,7 +102,8 @@ nav {
     color: #FFFFFF;
     background-image: url(../images/bg.jpg);
     background-size: cover;
-    padding: 142px;
+    padding-top: 142px;
+    padding-bottom: 142px;
     background-position: center center;
     margin-bottom: 140px;
 }
@@ -155,10 +157,10 @@ nav {
 .banner-box{
     background-image: url(../images/skidka.jpg);
     background-size: cover;
+    background-position: 0 center;
     padding-left: 100px;
     padding-top: 100px;
     padding-bottom: 119px;
-    background-position: 0 center;
     margin-bottom: 80px;
 }
 .menu{
@@ -794,7 +796,17 @@ nav {
         flex-basis: 79.5%;
     }
 }
-@media(max-width: 567px){
+
+@media(min-width: 551px){
+    .header-burger{
+        display: none;
+    }
+    .modal{
+        display: none;
+    }
+}
+
+@media(max-width: 550px){
     .footer-item .footer-item-tel{
         display: none;
     }
@@ -805,14 +817,7 @@ nav {
         display: none;
     }
 }
-@media(min-width: 551px){
-    .header-burger{
-        display: none;
-    }
-    .modal{
-        display: none;
-    }
-}
+
 @media(max-width: 550px){
     .promo .wrapper{
         gap: 22.5px;
@@ -1081,7 +1086,7 @@ nav {
         height: 108vw;
     }
     .menu-other .menu-grid{
-        padding-bottom: 24vw;
+        padding-bottom: 30vw;
     }
     .menu-other .menu-grid-cover{
         height: 54vw;
